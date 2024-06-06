@@ -18,5 +18,5 @@ public class LuvAopExpressions {
 
     // create pointcut: include package ... exclude getter/setter
     @Pointcut("forDaoPackage() && !(getter() || setter())")
-    private void forDaoPackageNoGetterSetter() {}
+    public void forDaoPackageNoGetterSetter() {}
 }
